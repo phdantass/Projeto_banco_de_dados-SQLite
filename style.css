@@ -1,0 +1,112 @@
+/* Corpo do site com imagem de fundo */
+body {
+    background-image: url('imagens/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.85); /* fundo semi-opaco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inputs e textarea */
+/* Inputs mais largos horizontalmente */
+
+input, textarea {
+    width: 80%;           /* largura menor que o container */
+    max-width: 1000px;     /* largura máxima */
+    padding: 10px;
+    margin: 3px auto;    /* centraliza horizontalmente */
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    display: block;       /* necessário para centralizar com margin auto */
+}
+
+/* Altura do textarea */
+textarea {
+    height: 120px;
+}
+
+/* Botão enviar */
+button {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 10px auto; 
+    display: block;   
+}
+
+button:hover {
+    background: #e68900;
+}
+
+/* Lista de feedbacks */
+#lista-feedbacks {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Comentários com fundo sólido e texto centralizado */
+#lista-feedbacks p {
+    background: rgba(255, 255, 255, 0.15); /* fundo semi-opaco */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;   /* centraliza o texto do comentário */
+}
+
+/* Botão de excluir nos comentários */
+#lista-feedbacks button {
+    background: #f44336;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0 auto; /* centraliza o botão */
+}
+
+#lista-feedbacks button:hover {
+    background: #d32f2f;
+}
+
+/* Texto de aviso com 50% de opacidade e centralizado */
+.texto-transparente {
+    color: rgba(255, 255, 255, 0.5); /* texto semitransparente */
+    text-align: center;               /* centraliza horizontalmente */
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hora {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;       /* opcional, menor que o texto principal */
+}

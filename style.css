@@ -27,6 +27,33 @@ body {
     align-items: center;
 }
 
+/* Comentário container */
+#lista-feedbacks div {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Botão de excluir */
+#lista-feedbacks button {
+    background: #f44336;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#lista-feedbacks button:hover {
+    background: #d32f2f;
+}
+
+
 /* Inputs e textarea */
 /* Inputs mais largos horizontalmente */
 
